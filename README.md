@@ -59,22 +59,6 @@ You can now access the server at http://localhost:8000
 
     php artisan serve
 
-## Database seeding
-
-**Populate the database with seed data with relationships which includes users, articles, comments, tags, favorites and follows. This can help you to quickly start testing the api or couple a frontend and start using it with ready content.**
-
-Open the DummyDataSeeder and set the property values as per your requirement
-
-    database/seeds/DummyDataSeeder.php
-
-Run the database seeder and you're done
-
-    php artisan db:seed
-
-***Note*** : It's recommended to have a clean database before seeding. You can refresh your migrations at any point to clean the database by running the following command
-
-    php artisan migrate:refresh
-    
 ## Docker
 
 To install with [Docker](https://www.docker.com), run following commands:
@@ -92,15 +76,6 @@ docker-compose exec php php artisan serve --host=0.0.0.0
 
 The api can be accessed at [http://localhost:8000/api](http://localhost:8000/api).
 
-## API Specification
-
-This application adheres to the api specifications set by the [Thinkster](https://github.com/gothinkster) team. This helps mix and match any backend with any other frontend without conflicts.
-
-> [Full API Spec](https://github.com/gothinkster/realworld/tree/master/api)
-
-More information regarding the project can be found here https://github.com/gothinkster/realworld
-
-----------
 
 # Code overview
 
@@ -146,7 +121,6 @@ Request headers
 | Yes      	| X-Requested-With 	| XMLHttpRequest   	|
 | Optional 	| Authorization    	| Token {JWT}      	|
 
-Refer the [api specification](#api-specification) for more info.
 
 ----------
  
